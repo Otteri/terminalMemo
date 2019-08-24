@@ -1,0 +1,15 @@
+###########################
+#        Example1         #
+###########################
+
+This is an example file, feel free to delete.
+You can write here anything you want to... 
+
+# Update all submodules:
+    git submodule update --recursive --init
+
+# reset submodules with modified content:
+    git submodule update --init
+
+# Do something to all submodules:
+    git submodule foreach <git command>
