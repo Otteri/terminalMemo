@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# On Windows, FZF works very poorly through MSYS bash
+# Therefore the FZF is called from a batch script instead.
+# This file works as a bash --> cmd wrapper, so it is still
+# possible to utilize FZF functionality via bash.
+
+# Get path to the directory where this script lies in
+basepath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+echo $basepath
+
+exec winpty "$basepath/findcmd.bat" "$@"
+
