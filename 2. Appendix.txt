@@ -1,7 +1,0 @@
-###########################
-#         Appendix        #
-###########################
-
-Just an example.
-Note how the files are listed to terminal in correct order, 
-because of the numbering in file names.
